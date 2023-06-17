@@ -16,6 +16,5 @@ Este proyecto es ideado y desarrallodado por
 Luis
 Donnet
 
-Donaciones
 Si deseas donarnos via paypal:
 luismartin260103@gmail.com
