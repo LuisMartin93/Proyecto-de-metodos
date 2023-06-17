@@ -33,7 +33,7 @@ class Rectangulo:
     def calcular_integral(self):
         print("Vamos a calcular la integral de la función '{}' por el metodo de rectangulos".format(self.__f))
         print("\t\t***Tabulación***")
-        for i in range(0, self.__n + 1):
+        for i in range(0, self.__n):
             self.__sumatoria = self.__f.subs(self.__x, i * self.__h + self.__l_inferior) + self.__sumatoria
             self.__lista_reciclada.append(i)
             self.__lista_reciclada.append("{:.{}f}".format(i * self.__h + self.__l_inferior, self.__fix))
