@@ -1,0 +1,39 @@
+@startuml Calculadora
+class Calculadora{
+    -__instruccion
+    -__integral
+    -__condicional
+    -__opc
+    +void __init__()
+    +void mostrar_instruccion()
+    +void saludar()
+    +void pedir_valor()
+    +void menu()
+}
+class Instruccion{
+    -__saludo
+    -__instruccion
+    +void __init__()
+    +void saludar()
+    +void mostrar_instruccio()
+}
+class Rectangulo{
+    -__n
+    -__fix
+    -__l_superior
+    -__l_inferior
+    -__h
+    -__sumatoria
+    -__x 
+    -__funcion 
+    -__f
+    -__area
+    +void __init__()
+    +void set_valores()
+    +void calcular_h()
+    +void interpretar_funcion()
+    +void calcular_integral()
+    +void get_integral()
+}
+Calculadora "1" *-- Instruccion 
+Calculadora "1" *-- Rectangulo 
